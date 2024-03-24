@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Feedback Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @media screen and (min-width: 768px) {
+      .container {
+        padding: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mobile App Feedback Survey</h1>
+    <form>
+        <div class="form-group"
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your Fullname">
+        </div>
+             <div class="form-group"
+                <label for="Email">Email:</label>
+                <input type="text" class="form-control" id="Email" placeholder="Enter your Email address">
+             </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter your age">
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender:</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male">
+              <label class="form-check-label" for="genderMale">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female">
+              <label class="form-check-label" for="genderFemale">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="genderOther" value="Other">
+              <label class="form-check-label" for="genderOther">Other</label>
+            </div>
+          </div>
+      <div class="form-group">
+        <label for="satisfaction">How satisfied are you with the latest update of our mobile app?</label>
+        <select id="satisfaction">
+          <option value="Very satisfied">Very satisfied</option>
+          <option value="Satisfied">Satisfied</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Dissatisfied">Dissatisfied</option>
+          <option value="Very dissatisfied">Very dissatisfied</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Which features of the app do you use most frequently?</label><br>
+        <input type="checkbox" id="feature1" name="feature1" value="Feature 1">
+        <label for="feature1">Feature 1</label><br>
+        <input type="checkbox" id="feature2" name="feature2" value="Feature 2">
+        <label for="feature2">Feature 2</label><br>
+        <!-- Add more checkboxes for other features -->
+      </div>
+      <div class="form-group">
+        <label for="bugs">Have you encountered any bugs or issues with the latest update? If yes, please describe.</label>
+        <textarea id="bugs" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="performance">How would you rate the performance of the app after the latest update?</label>
+        <select id="performance">
+          <option value="Excellent">Excellent</option>
+          <option value="Good">Good</option>
+          <option value="Fair">Fair</option>
+          <option value="Poor">Poor</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ui">How do you feel about the user interface changes in the latest update?</label>
+        <select id="ui">
+          <option value="Like it">Like it</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Dislike it">Dislike it</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="suggestions">Do you have any suggestions for improving the app?</label>
+        <textarea id="suggestions" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="recommendation">Would you recommend our app to others?</label><br>
+        <input type="radio" id="recommendYes" name="recommendation" value="Yes">
+        <label for="recommendYes">Yes</label><br>
+        <input type="radio" id="recommendNo" name="recommendation" value="No">
+        <label for="recommendNo">No</label><br>
+        <input type="radio" id="recommendMaybe" name="recommendation" value="Maybe">
+        <label for="recommendMaybe">Maybe</label><br>
+      </div>
+      <div class="form-group">
+        <label for="appUsage">How often do you use the app?</label>
+        <select id="appUsage">
+          <option>Daily</option>
+          <option>Weekly</option>
+          <option>Monthly</option>
+          <option>Rarely</option>
+        </select>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
